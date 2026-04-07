@@ -1,0 +1,335 @@
+{
+  "prompts": [
+    {
+      "prompt": "love movie",
+      "intent_family": "romance",
+      "expected_genres": ["Romance", "Drama"],
+      "discouraged_genres": ["Horror", "Crime", "Action", "Science Fiction"],
+      "expected_moods": ["romantic", "emotional"],
+      "notes": "Should feel relationship-centered, not generic."
+    },
+    {
+      "prompt": "romantic movie",
+      "intent_family": "romance",
+      "expected_genres": ["Romance", "Comedy", "Drama"],
+      "discouraged_genres": ["Horror", "Crime", "War"],
+      "expected_moods": ["romantic", "warm"]
+    },
+    {
+      "prompt": "love but funny movie",
+      "intent_family": "mixed",
+      "expected_genres": ["Romance", "Comedy"],
+      "discouraged_genres": ["Horror", "Crime", "Science Fiction"],
+      "expected_moods": ["romantic", "funny", "warm"]
+    },
+    {
+      "prompt": "heartbreaking romance",
+      "intent_family": "mixed",
+      "expected_genres": ["Romance", "Drama"],
+      "discouraged_genres": ["Action", "Horror", "Crime"],
+      "expected_moods": ["heartbreaking", "sad", "emotional"],
+      "expected_story_outcomes": ["tragic ending", "bittersweet ending"]
+    },
+    {
+      "prompt": "romance with happy ending",
+      "intent_family": "narrative",
+      "expected_genres": ["Romance", "Comedy", "Drama"],
+      "discouraged_genres": ["Horror", "Crime", "War"],
+      "expected_moods": ["romantic", "warm"],
+      "expected_story_outcomes": ["happy ending"]
+    },
+    {
+      "prompt": "sad movie",
+      "intent_family": "sad_emotional",
+      "expected_genres": ["Drama", "Romance"],
+      "discouraged_genres": ["Action", "Comedy", "Horror", "Science Fiction"],
+      "expected_moods": ["sad", "emotional", "tragic"]
+    },
+    {
+      "prompt": "movie to cry to",
+      "intent_family": "sad_emotional",
+      "expected_genres": ["Drama", "Romance", "Family"],
+      "discouraged_genres": ["Action", "Comedy", "Animation", "Science Fiction"],
+      "expected_moods": ["sad", "heartbreaking", "emotional"]
+    },
+    {
+      "prompt": "emotional family drama",
+      "intent_family": "sad_emotional",
+      "expected_genres": ["Drama", "Family"],
+      "discouraged_genres": ["Action", "Horror", "Thriller"],
+      "expected_moods": ["emotional", "sad"],
+      "expected_story_outcomes": ["emotional healing"]
+    },
+    {
+      "prompt": "bittersweet movie",
+      "intent_family": "sad_emotional",
+      "expected_genres": ["Drama", "Romance"],
+      "discouraged_genres": ["Action", "Horror", "Family"],
+      "expected_moods": ["bittersweet", "emotional"],
+      "expected_story_outcomes": ["bittersweet ending"]
+    },
+    {
+      "prompt": "tragic story movie",
+      "intent_family": "narrative",
+      "expected_genres": ["Drama", "Romance"],
+      "discouraged_genres": ["Comedy", "Family", "Action"],
+      "expected_moods": ["tragic", "sad"],
+      "expected_story_outcomes": ["tragic ending"]
+    },
+    {
+      "prompt": "feel good movie",
+      "intent_family": "feel_good",
+      "expected_genres": ["Comedy", "Family", "Romance"],
+      "discouraged_genres": ["Horror", "Thriller", "Crime"],
+      "expected_moods": ["uplifting", "warm"]
+    },
+    {
+      "prompt": "uplifting movie",
+      "intent_family": "feel_good",
+      "expected_genres": ["Comedy", "Drama", "Family"],
+      "discouraged_genres": ["Horror", "Thriller", "Crime"],
+      "expected_moods": ["uplifting", "warm", "emotional healing"]
+    },
+    {
+      "prompt": "warm hopeful movie",
+      "intent_family": "feel_good",
+      "expected_genres": ["Drama", "Comedy", "Romance"],
+      "discouraged_genres": ["Horror", "Thriller", "Crime"],
+      "expected_moods": ["warm", "uplifting"]
+    },
+    {
+      "prompt": "cozy movie night pick",
+      "intent_family": "feel_good",
+      "expected_genres": ["Comedy", "Romance", "Family"],
+      "discouraged_genres": ["Horror", "Thriller", "Action"],
+      "expected_moods": ["cozy", "warm"]
+    },
+    {
+      "prompt": "healing movie with heart",
+      "intent_family": "feel_good",
+      "expected_genres": ["Drama", "Romance", "Family"],
+      "discouraged_genres": ["Horror", "Action", "Crime"],
+      "expected_moods": ["warm", "uplifting", "emotional healing"]
+    },
+    {
+      "prompt": "funny movie",
+      "intent_family": "funny",
+      "expected_genres": ["Comedy"],
+      "discouraged_genres": ["Horror", "Thriller", "War", "Bleak Drama"],
+      "expected_moods": ["funny"]
+    },
+    {
+      "prompt": "light comedy",
+      "intent_family": "funny",
+      "expected_genres": ["Comedy", "Romance"],
+      "discouraged_genres": ["Horror", "Thriller", "War"],
+      "expected_moods": ["funny", "warm"]
+    },
+    {
+      "prompt": "laugh-out-loud movie",
+      "intent_family": "funny",
+      "expected_genres": ["Comedy"],
+      "discouraged_genres": ["Horror", "Drama", "Thriller"],
+      "expected_moods": ["funny"]
+    },
+    {
+      "prompt": "rom com with good banter",
+      "intent_family": "mixed",
+      "expected_genres": ["Comedy", "Romance"],
+      "discouraged_genres": ["Horror", "Crime", "Science Fiction"],
+      "expected_moods": ["funny", "romantic"]
+    },
+    {
+      "prompt": "fun comfort movie",
+      "intent_family": "mixed",
+      "expected_genres": ["Comedy", "Family", "Romance"],
+      "discouraged_genres": ["Horror", "Thriller", "Crime"],
+      "expected_moods": ["funny", "cozy", "warm"]
+    },
+    {
+      "prompt": "dark thriller",
+      "intent_family": "dark_intense",
+      "expected_genres": ["Thriller", "Drama", "Mystery"],
+      "discouraged_genres": ["Family", "Comedy", "Romance"],
+      "expected_moods": ["dark", "intense"]
+    },
+    {
+      "prompt": "intense psychological movie",
+      "intent_family": "dark_intense",
+      "expected_genres": ["Thriller", "Mystery", "Drama"],
+      "discouraged_genres": ["Family", "Comedy"],
+      "expected_moods": ["dark", "intense"]
+    },
+    {
+      "prompt": "dark mystery movie",
+      "intent_family": "dark_intense",
+      "expected_genres": ["Mystery", "Thriller", "Drama"],
+      "discouraged_genres": ["Family", "Comedy", "Animation"],
+      "expected_moods": ["dark"]
+    },
+    {
+      "prompt": "moody thriller",
+      "intent_family": "dark_intense",
+      "expected_genres": ["Thriller", "Drama", "Mystery"],
+      "discouraged_genres": ["Family", "Comedy"],
+      "expected_moods": ["dark", "intense"]
+    },
+    {
+      "prompt": "grim crime thriller",
+      "intent_family": "dark_intense",
+      "expected_genres": ["Thriller", "Crime", "Drama"],
+      "discouraged_genres": ["Family", "Comedy", "Romance"],
+      "expected_moods": ["dark"]
+    },
+    {
+      "prompt": "like Interstellar but less confusing",
+      "intent_family": "reference",
+      "expected_genres": ["Science Fiction", "Drama", "Thriller"],
+      "discouraged_genres": ["Animation", "Comedy", "Family"],
+      "expected_moods": ["thoughtful"],
+      "notes": "Should stay cerebral but avoid abstract drift."
+    },
+    {
+      "prompt": "like Arrival but warmer",
+      "intent_family": "reference",
+      "expected_genres": ["Science Fiction", "Drama"],
+      "discouraged_genres": ["Action", "Horror", "Animation"],
+      "expected_moods": ["warm", "emotional"]
+    },
+    {
+      "prompt": "like Avengers: Infinity War but darker",
+      "intent_family": "reference",
+      "expected_genres": ["Action", "Science Fiction", "Adventure"],
+      "discouraged_genres": ["Family", "Comedy"],
+      "expected_moods": ["dark", "intense"],
+      "expected_story_outcomes": ["villain wins"]
+    },
+    {
+      "prompt": "movies similar to Inception",
+      "intent_family": "reference",
+      "expected_genres": ["Science Fiction", "Thriller", "Mystery"],
+      "discouraged_genres": ["Family", "Comedy", "Animation"],
+      "expected_moods": ["thoughtful"]
+    },
+    {
+      "prompt": "like Blade Runner 2049 but less dark",
+      "intent_family": "reference",
+      "expected_genres": ["Science Fiction", "Drama", "Thriller"],
+      "discouraged_genres": ["Comedy", "Family"],
+      "expected_moods": ["warm", "thoughtful"]
+    },
+    {
+      "prompt": "movie where the villain wins",
+      "intent_family": "narrative",
+      "expected_genres": ["Drama", "Thriller", "Mystery"],
+      "discouraged_genres": ["Comedy", "Family"],
+      "expected_story_outcomes": ["villain wins"]
+    },
+    {
+      "prompt": "tragic ending movie",
+      "intent_family": "narrative",
+      "expected_genres": ["Drama", "Romance"],
+      "discouraged_genres": ["Comedy", "Family", "Action"],
+      "expected_story_outcomes": ["tragic ending"]
+    },
+    {
+      "prompt": "bittersweet ending romance",
+      "intent_family": "narrative",
+      "expected_genres": ["Romance", "Drama"],
+      "discouraged_genres": ["Action", "Horror", "Crime"],
+      "expected_story_outcomes": ["bittersweet ending"]
+    },
+    {
+      "prompt": "revenge movie with emotional cost",
+      "intent_family": "narrative",
+      "expected_genres": ["Drama", "Thriller", "Action"],
+      "discouraged_genres": ["Family", "Comedy"],
+      "expected_story_outcomes": ["revenge"]
+    },
+    {
+      "prompt": "redemption arc movie",
+      "intent_family": "narrative",
+      "expected_genres": ["Drama"],
+      "discouraged_genres": ["Horror", "Family"],
+      "expected_story_outcomes": ["redemption"]
+    },
+    {
+      "prompt": "movie for date night",
+      "intent_family": "use_case",
+      "expected_genres": ["Romance", "Comedy"],
+      "discouraged_genres": ["Horror", "Crime", "War"],
+      "expected_moods": ["warm", "romantic"]
+    },
+    {
+      "prompt": "movie to watch with family",
+      "intent_family": "use_case",
+      "expected_genres": ["Family", "Animation", "Comedy"],
+      "discouraged_genres": ["Horror", "Thriller", "Crime"],
+      "expected_moods": ["warm", "uplifting"]
+    },
+    {
+      "prompt": "rainy day movie",
+      "intent_family": "use_case",
+      "expected_genres": ["Drama", "Romance", "Comedy"],
+      "discouraged_genres": ["Horror", "Action"],
+      "expected_moods": ["cozy", "bittersweet"]
+    },
+    {
+      "prompt": "late night deep movie",
+      "intent_family": "use_case",
+      "expected_genres": ["Drama", "Science Fiction", "Mystery"],
+      "discouraged_genres": ["Family", "Broad Comedy"],
+      "expected_moods": ["thoughtful", "dark"]
+    },
+    {
+      "prompt": "easy movie for a relaxed night",
+      "intent_family": "use_case",
+      "expected_genres": ["Comedy", "Romance", "Family"],
+      "discouraged_genres": ["Horror", "Thriller", "Bleak Drama"],
+      "expected_moods": ["warm", "cozy"]
+    },
+    {
+      "prompt": "stylish animated movie with emotional depth",
+      "intent_family": "mixed",
+      "expected_genres": ["Animation", "Drama"],
+      "discouraged_genres": ["Horror", "Crime"],
+      "expected_moods": ["stylish", "emotional"]
+    },
+    {
+      "prompt": "not too scary horror",
+      "intent_family": "constraint",
+      "expected_genres": ["Horror", "Thriller"],
+      "discouraged_genres": ["Gore", "Slasher", "Extreme Horror"],
+      "expected_moods": ["dark"],
+      "notes": "Should stay horror-adjacent without gore-heavy drift."
+    },
+    {
+      "prompt": "fun movie for date night",
+      "intent_family": "mixed",
+      "expected_genres": ["Comedy", "Romance"],
+      "discouraged_genres": ["Horror", "Crime", "War"],
+      "expected_moods": ["funny", "warm", "romantic"]
+    },
+    {
+      "prompt": "warm emotional sci-fi",
+      "intent_family": "mixed",
+      "expected_genres": ["Science Fiction", "Drama"],
+      "discouraged_genres": ["Horror", "Family Comedy", "Crime"],
+      "expected_moods": ["warm", "emotional"]
+    },
+    {
+      "prompt": "dark but emotional thriller",
+      "intent_family": "mixed",
+      "expected_genres": ["Thriller", "Drama", "Mystery"],
+      "discouraged_genres": ["Family", "Comedy"],
+      "expected_moods": ["dark", "emotional"]
+    },
+    {
+      "prompt": "love story that will make me cry",
+      "intent_family": "mixed",
+      "expected_genres": ["Romance", "Drama"],
+      "discouraged_genres": ["Action", "Comedy", "Horror"],
+      "expected_moods": ["romantic", "sad", "heartbreaking"]
+    }
+  ]
+}
